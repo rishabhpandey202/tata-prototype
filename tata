@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tataji follow this</h1>
+</body>
+</html>
+<script>
+
+
+
+var car={
+    airbag:4,
+    seat:5,
+    gearbox:"automatic",
+    warranty:"5yr",
+    engienType:"pertol",
+}
+
+var suv=Object.create(car);
+let baleno=Object.create(car);
+console.log(suv);
+
+
+
+
+   function construcktorCF(){
+    this.airbag=4;
+   this.seat=5;
+   this.gearbox="automatic";
+   this.warranty="5yr";
+   this.engienType="pertol";
+    }
+let p2=new construcktorCF();
+// console.log(p2)
+var sasteCar=Object.create(p2)
+console.log(sasteCar)
+
+function construcktorCF(n,m,g,w,e){
+    this.airbag=n;
+   this.seat=m;
+   this.gearbox=g;
+   this.warranty=w;
+   this.engienType=e;
+    }
+let p3=new construcktorCF(4,5,"automatic","5yr","pertol");
+console.log(p3)
+
+
+</script>
